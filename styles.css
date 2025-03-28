@@ -170,6 +170,7 @@ body {
       line-height: 1.2;
       margin-bottom: 1.5rem;
       font-weight: 700;
+      
     }
     
     .hero p {
@@ -184,7 +185,7 @@ body {
       justify-content: space-between;
       gap: 20px;
       margin-top: 20px;
-      padding: 5%;
+      padding: 0% 5% 5% 5%;
   }
   .project-container {
       display: flex;
