@@ -74,7 +74,8 @@ body {
       height: 40px;
       border: none;
       display: flex;
-      flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+      flex-wrap: wrap;
+      /* Ensures content wraps on smaller screens */
       justify-content: space-between;
       align-items: center;
       justify-content: center;
@@ -140,20 +141,22 @@ body {
       }
 }
 
-.pulse-animation circle {
-      animation: pulse 1.5s ease-in-out infinite alternate;
-      transform-origin: center;
+/* Header styles with animation */
+.header {
+      margin-bottom: 0.1rem;
 }
 
-.pulse-animation circle:nth-child(1) {
-      animation-delay: -0.5s;
+.header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      max-width: 800px;
+      margin-bottom: 1rem;
+      line-height: 1.2;
 }
 
-.pulse-animation circle:nth-child(2) {
-      animation-delay: 0s;
+.header p {
+      color: #63636c;
+      font-size: 1.125rem;
+      max-width: 700px;
+      /* Delay the subtitle animation */
 }
-
-.pulse-animation circle:nth-child(3) {
-      animation-delay: 0.5s;
-}
-
