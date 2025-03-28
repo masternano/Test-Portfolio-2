@@ -141,6 +141,24 @@ body {
       }
 }
 
+.pulse-animation circle {
+      animation: pulse 1.5s ease-in-out infinite alternate;
+      transform-origin: center;
+}
+
+.pulse-animation circle:nth-child(1) {
+      animation-delay: -0.5s;
+}
+
+.pulse-animation circle:nth-child(2) {
+      animation-delay: 0s;
+}
+
+.pulse-animation circle:nth-child(3) {
+      animation-delay: 0.5s;
+}
+
+
 /* Work Hero Section */
 .hero {
       padding: 5rem 0 3rem;
