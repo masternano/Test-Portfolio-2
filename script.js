@@ -32,3 +32,31 @@ document.addEventListener('DOMContentLoaded', function() {
           });
       }
   });
+
+    // Dynamically set the active class based on the current page
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        if (item.getAttribute('href') === window.location.pathname.split('/').pop()) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+
+// Replace loader with text after a delay
+window.addEventListener('DOMContentLoaded', () => {
+    const loader = document.getElementById('loader');
+    const introText = document.getElementById('introText');
+
+    setTimeout(() => {
+        loader.style.display = 'none';
+        introText.style.display = 'block';
+    }, 3000); // 3-second delay
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const introText = document.getElementById('introText');
+    setTimeout(() => {
+        introText.classList.add('show');
+    }, 4000); // Delay to simulate a loading effect
+});
