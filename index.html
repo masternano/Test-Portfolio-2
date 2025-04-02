@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <title>Samuel Nnabude || Senior Product Designer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="styles2.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <link href="img/favicon.png" rel="shortcut icon" />
 </head>
+
 <body>
     <div class="container">
         <div class="card">
@@ -16,7 +18,7 @@
                     <div class="avatar">
                         <img src="img/Avatar.png" alt="Profile">
                     </div>
-                    <div class="loader">
+                    <div class="loader" id="loader">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pulse-animation">
                             <circle cx="12" cy="12" r="1"></circle>
@@ -31,24 +33,28 @@
                     </div>
                 </div>
             </div>
-            <div id="works" class="content-area">
-                <h2>My Works</h2>
-            </div>
-            <div id="journal" class="content-area">
-                <h2>Journal</h2>
-            </div>
-            <div id="contact" class="content-area">
-                <h2>Contact Me</h2>
-            </div>
-            
+
+            <!-- Navigation menu -->
             <nav class="navigation">
                 <a href="index.html" class="nav-item active" data-page="home">Home</a>
                 <a href="work.html" class="nav-item" data-page="works">My works</a>
-                <a href="#" class="nav-item" data-page="journal">Journal</a>
+                <a href="journal.html" class="nav-item" data-page="journal">Journal</a>
                 <a href="#" class="nav-item" data-page="contact">Contact</a>
             </nav>
         </div>
     </div>
     <script type="module" src="script.js"></script>
+    <script>
+        // Dynamically set the active class based on the current page
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
+            if (item.getAttribute('href') === window.location.pathname.split('/').pop()) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    </script>
 </body>
+
 </html>
