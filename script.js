@@ -60,3 +60,4 @@ document.addEventListener('DOMContentLoaded', () => {
         introText.classList.add('show');
     }, 4000); // Delay to simulate a loading effect
 });
+
