@@ -28,7 +28,7 @@
                     </div>
                     <div class="intro-text" id="introText" style="display: none; vertical-align: top;">
                         <P class="profile-name">Samuel Nnabude <span class="loc">10:25am • Abuja. NG</span></P>
-                        Hi, my name is Samuel Nnabude. I design digital products, design systems, develop web interfaces
+                        Hi, my name is <span class="text-gradient">Samuel Nnabude</span>. I design digital products, design systems, develop web interfaces
                         and visualize data.
                     </div>
                 </div>
@@ -54,6 +54,27 @@
                 item.classList.remove('active');
             }
         });
+
+        // Function to update the time in Abuja, Nigeria
+        function updateTime() {
+            const locElement = document.querySelector('.loc');
+            if (locElement) {
+                // Get the current time in Abuja, Nigeria (UTC+1)
+                const abujaTime = new Date().toLocaleTimeString('en-NG', {
+                    timeZone: 'Africa/Lagos',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: false
+                });
+                locElement.textContent = `${abujaTime} • Abuja, NG`;
+            }
+        }
+
+        // Call the function on page load
+        updateTime();
+
+        // Optionally, update the time every minute
+        setInterval(updateTime, 60000);
     </script>
 </body>
 

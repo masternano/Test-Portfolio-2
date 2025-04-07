@@ -106,7 +106,7 @@ body {
       color: var(--Text-Primary-Active, #121217);
       font-size: 14px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 20px;
       /* 142.857% */
 
@@ -122,7 +122,7 @@ body {
       color: var(--Text-Primary-Inverse, #FFF);
       font-size: 14px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 20px;
       /* 142.857% */
 }
@@ -164,38 +164,36 @@ body {
       padding: 5rem 0 3rem;
       max-width: 900px;
       text-align: left;
-}
-
-.hero h1 {
+    }
+    
+    .hero h1 {
       font-size: 40px;
       line-height: 1.2;
       margin-bottom: 1.5rem;
       font-weight: 700;
 
-}
-
-.hero p {
+    }
+    
+    .hero p {
       font-size: 16px;
       color: #666;
       max-width: 900px;
-}
+    }
 
-.projects {
+    .projects {
       flex: 1;
       display: flex;
       justify-content: space-between;
       gap: 20px;
       margin-top: 20px;
       padding: 0% 5% 5% 5%;
-}
-
-.project-container {
+  }
+  .project-container {
       display: flex;
       flex-direction: column;
       flex: 1;
-}
-
-.project-card {
+  }
+  .project-card {
       background-size: cover;
       background-position: center;
       color: white;
@@ -204,27 +202,23 @@ body {
       height: 300px;
       display: flex;
       align-items: flex-end;
-}
-
-.project-container:first-child {
+  }
+  .project-container:first-child {
       flex: 1.3125;
-}
-
-.tags {
+  }
+  .tags {
       margin-top: 10px;
       display: flex;
       gap: 5px;
       flex-wrap: wrap;
-}
-
-.tag {
+  }
+  .tag {
       background: #eee;
       padding: 5px 10px;
       border-radius: 5px;
       font-size: 12px;
       color: #333;
-}
-
+  }
 .intro-text {
       display: flex;
       width: 324px;
@@ -249,25 +243,35 @@ body {
 .intro-text.show {
       opacity: 1;
       transform: translateY(0);
-}
+  }
 
-.profile-name {
+  .profile-name {
       color: var(--Text-Primary-Active, #121217);
       font-family: "SF Pro Rounded";
       font-size: 14px;
       font-style: normal;
       font-weight: 800;
-      line-height: 20px;
-      /* 142.857% */
-}
-
-.loc {
+      line-height: 20px; /* 142.857% */
+  }
+  
+  .loc {
       color: var(--Text-Primary-Disabled, #BABBC5);
       font-family: "SF Pro Rounded";
-      font-size: 12px;
+      font-size: 10px;
       font-style: normal;
       font-weight: 500;
-      line-height: 14px;
-      /* 140% */
+      line-height: 14px; /* 140% */
       letter-spacing: 0.02px;
-}
+  }
+
+  .text-gradient {
+        background: linear-gradient(90deg, rgba(104, 33, 215, 0.70) 0.41%, rgba(114, 31, 207, 0.70) 14.44%, rgba(125, 30, 199, 0.70) 27.39%, rgba(185, 23, 151, 0.70) 41.41%, rgba(246, 16, 103, 0.70) 54.36%, rgba(99, 33, 219, 0.70) 67.84%, rgba(94, 34, 223, 0.70) 81.33%, rgba(89, 34, 227, 0.70) 94.81%, rgba(84, 35, 231, 0.70) 108.3%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "SF Pro Rounded";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+  }
